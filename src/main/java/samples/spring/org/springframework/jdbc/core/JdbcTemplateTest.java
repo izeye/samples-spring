@@ -22,6 +22,7 @@ public class JdbcTemplateTest {
 
     @Test
     @Ignore
+	// Not working.
     public void testJdbc_H2_Mem_() {
         testJdbcTemplate("jdbc:h2:mem:");
     }
