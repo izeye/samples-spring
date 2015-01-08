@@ -2,8 +2,8 @@ buildscript {
     repositories {
         maven { url "http://repo.spring.io/libs-release" }
         maven { url "http://repo.spring.io/libs-milestone" }
-        mavenLocal()
         mavenCentral()
+        mavenLocal()
     }
 
     dependencies {
@@ -27,8 +27,8 @@ ext {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
+    mavenLocal()
     maven { url "https://repo.spring.io/libs-release" }
 }
 
@@ -36,6 +36,7 @@ dependencies {
 //    compile("org.springframework:spring-jdbc")
     compile("org.springframework:spring-jdbc:${springVersion}")
     compile("org.springframework:spring-context:${springVersion}")
+    compile("org.springframework:spring-web:${springVersion}")
 
     compile("org.springframework.data:spring-data-jpa:1.7.1.RELEASE")
 
